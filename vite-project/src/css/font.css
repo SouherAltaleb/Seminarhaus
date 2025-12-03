@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* ========== OPEN SANS REGULAR ========== */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/open-sans-regular.woff2") format("woff2");
+}
+
+/* ========== OPEN SANS BOLD ========== */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/open-sans-bold.woff2") format("woff2");
+}
+
+/* ========== PALATINO BOLD ========== */
+@font-face {
+  font-family: "Palatino";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/palatino-bold.woff2") format("woff2");
+}
