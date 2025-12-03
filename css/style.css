@@ -1,0 +1,544 @@
+@charset "UTF-8";
+
+.clear {
+    clear: both;
+}
+
+* {
+     scroll-behavior: smooth;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: transparent;
+    font-family: 'Open Sans';
+}
+
+html {
+  font-family: 'Open Sans';
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 16px;
+}
+
+/* FARBEN */
+:root {
+	--my-brown: #8d634b;
+	--my-darkbrown: #553929;
+	--my-lightbrown: #e8e0db;
+  --my-bg: #f8f7f6;
+  --my-body: #383535;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Palatino Bold";
+    margin-bottom: 0.5rem;
+    color: #8d634b;
+}
+h1{
+  font-size: 3.5rem; 
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 2em;
+}
+h4{
+    font-size: 1.5em;
+}
+h5{
+    font-size: 1.25em;
+    font-family: 'Open Sans';
+    color: #553929;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.125em; /* 18px */
+    font-family: 'Open Sans';
+    color: #383535;
+    line-height: 1.8;
+}
+.small_text{
+  font-size: 0.75em; /* 12px */
+}
+.flex-box {
+    display: flex;
+}
+
+.wrap {
+    padding: 0 3%;
+}
+
+section {
+   padding: 200px 0;
+}
+
+
+.pr-4{
+    padding-right: 4rem;
+}
+
+
+/************************** HEADERBILD **************************/                                                  
+.headerbild{
+   margin-top: 12%; 
+   position: relative;
+   text-align: left;
+}
+.headerbild img{
+  width: 100%;
+}
+ .dark-brown{
+    color: #553929;  
+}
+#padding_stoerer{
+    padding-left: 7rem;
+}
+#position_stoerer{
+    position: absolute;
+    top: 20%;
+    padding-left: 4rem;
+}
+.teaser-text{
+    color: #8D634B;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 0;
+    padding-right: 6rem;
+    /* letter-spacing: 0.05rem; */
+    text-align-last: end;
+}
+/*** Störer ***/
+.white{
+    color: #ffffff;
+}
+.small{
+    font-size: 1em;
+}
+.background{
+    background-color: #8d634b;
+    padding: 2rem 1rem 1rem 4rem;
+    position: absolute;
+    bottom: 0;
+    clip-path: polygon(0% 1%, 100% 35px, 100% 100%, 0% calc(100% - 0px));
+    
+}
+
+/************************** BARRIERFREI BUTTONS **************************/
+.barrierfrei_buttons{
+  background-color: var(--my-darkbrown);
+  position: fixed;
+  display: grid;
+  top: 50%;
+  right: 0;
+  width: 4rem;
+  z-index: 1;
+}
+
+button.minus {
+  border: none;
+  height: 4rem;
+}
+button.minus:hover {
+background-color: var(--my-brown);
+}
+button.plus {
+  border: none;
+  height: 4rem;
+}
+button.plus:hover {
+  background-color: var(--my-brown);
+  }
+
+/* color*/
+button.color {
+  border: none;
+  height: 4rem;
+  background-color: white;
+}
+
+/************************** START **************************/   
+.main-container{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.headline{
+    margin-top: 6rem;
+    position: relative;
+    font-family: "Palatino Bold";
+}
+.img-shadow{
+    color: #E8E0DB;
+    box-shadow: none;
+    box-shadow: 1rem 1rem;
+}
+/************************** ANGEBOTE **************************/   
+.card{
+    background-color: #F8F7F6;
+    border-radius: 0px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(70, 69, 69, 0.2);
+}
+.img-card{
+  clip-path: polygon(0% 0%, 100% 0px, 100% 90%, 0% calc(100% - 0px));
+}
+.img-card-opacity{
+  width: 100%;
+  position: absolute;
+}
+.card-body {
+  padding: 1.5rem 1rem;
+}
+.btn-primary{
+    background-color: #8d634b;
+    border: none;
+    border-radius: 0;
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    align-items: center;
+    font-size: 1.125em;
+    font-weight: 600;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-box-shadow: 0px 0px 0 0 #000000 inset, 0px 0px 0 0 #000000 inset;
+    box-shadow: 0px 0px 0 0 #000000 inset, 0px 0px 0 0 #000000 inset;
+}
+.btn-primary:hover{
+    background-color: #553929;
+}
+.btn-primary a {
+  color: white;
+  text-decoration: none;
+}
+
+.bg_grafik{
+    position: absolute;
+    right: 0;
+    margin-top: -4rem;
+}
+/************************** STIMMEN **************************/  
+.quote_icon{
+    width: 10%;
+    right: 0;
+    margin-top: -1.5rem;
+    margin-right: 1.5rem;
+}
+.icon {
+    text-align-last: end;
+}
+/************************** FOOTER **************************/
+.logo_footer{
+    margin-bottom: -15rem;
+}
+
+.container-fluid {
+    overflow: hidden;
+    margin-top: 8rem;
+    background: #e8e0db;
+    border-top: #8d634b 2px solid;
+}
+  
+.small-footer{
+    font-size: 1em;
+}
+/* kontakt */
+.footer-links{
+    text-decoration: none;
+    color: #383535;
+    font-size: 1em;
+    font-family: "Open Sans";
+}
+.footer-links:hover{
+  text-decoration: none;
+  color: #553929;
+  font-weight: 600;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.kontakt{
+    align-items: inherit;
+}
+
+/* Footer legal */
+.footer-end {
+    padding: 1rem 1rem;
+    background-color: #8D634B;
+}
+
+.p-footer{
+    color: #ffffff;
+    font-size: 0.75em;
+    margin: 0;
+}
+.f-end{
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+.p-footer:nth-last-child(2) {
+    flex: 1;
+}
+
+/************************** UNTERSEITEN **************************/
+/*--------------------------------------------------------------*/
+
+/************************** Angebote **************************/
+.img_header{
+
+  clip-path: polygon(0% 0%, 100% 0px, 100% 100%, 14% calc(100% - 0px));
+
+}
+.img_header_opacity {
+  position: absolute;
+}
+
+.text_header{
+  top: 38%;
+  position: absolute;
+  padding-left: 4rem;
+}
+.filter{
+  filter: brightness(70%);
+  clip-path: polygon(0% 0%, 100% 0px, 100% 90%, 0% calc(100% - 0px));
+  background-size: cover;
+  /*background: -webkit-gradient(linear,left top,right bottom,from(black),to(white)); */
+}
+
+span {
+  margin-right: 1rem;
+  font-family: "Palatino Bold";
+}
+
+.separator {
+  overflow: hidden;
+  position: relative;
+
+}
+.separator:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  border-bottom: 3px solid #8d634b;
+  position: absolute;
+  top: 33%;
+  padding-left: 20px;
+}
+
+.kurs_info{
+  align-items: inherit;
+}
+.image{
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0% 0%, 100% 0px, 100% 100%, 14% calc(100% - 0px));
+
+}
+.image_opacity {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 33%;
+  clip-path: polygon(0% 0%, 100% 0px, 100% 100%, 5% calc(100% - 0px));
+}
+/************************** Anmeldung **************************/
+.form-label{
+  font-family: "Open Sans";
+  color: var(--my-brown);
+  font-weight: 600;
+  font-size: 1.25em;
+}
+.form_design{
+  border-bottom: 1px solid #8d634b !important;
+  border-radius: 0;
+  border-color: white;
+  margin-bottom: 1rem;
+}
+form{
+  width: 100%;
+}
+.bg_image{
+  background-image: url(../images/anmeldung_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-check-input{
+  border-radius: 0 !important;
+  border-color: var(--my-brown);
+}
+.form-check-input:checked {
+  background-color: var(--my-brown);
+  border-color: var(--my-brown);
+}
+
+
+/************************** Stimmen **************************/
+.quote_icon_small{
+  right: 0;
+  margin-top: -1.5rem;
+  margin-right: 1.5rem;
+}
+
+/************************** Ausflüge **************************/
+.block_center{
+  align-items: center;
+}
+.margin_y{ 
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+.ausfluege_bg{
+  position: absolute;
+  width: 58%;
+  z-index: -1;
+}
+
+.img_shadow_spiegel{
+  box-shadow: -1rem 1rem;
+  color: #E8E0DB;
+}
+/************************** Impressum **************************/
+.impressum_grafik{
+  position: absolute;
+  right: 4rem;
+  /*top: 50%; */
+}
+.impressum{
+  margin-top: 25%;
+    }
+
+/*********************** Responsive Design ***********************/
+/*--------------------------------------------------------------*/
+@media (min-width: 1920px) {
+
+  .teaser-text {
+    padding-right: 28rem;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+
+  h1{
+    font-size: 2.5rem; 
+  }
+ 
+  p{
+    font-size:1em;
+  }
+  .teaser-text {
+    font-size: 0.75em;
+    padding-right: 4rem;
+  }
+  #padding_stoerer {
+    padding-left: 5rem;
+  }
+
+  #position_stoerer {
+   top: 18%; 
+   padding-left: 2rem;
+  }
+
+  .table>thead {
+   font-size: 0.70em;
+  }
+
+/* Ausflüge Bilder */
+.img-shadow {
+  transform: translate(0, 35%);
+}
+.img_shadow_spiegel {
+  transform: translate(0, 35%);
+}
+}
+
+@media (max-width: 768px) { 
+
+  h1{
+    font-size: 2.5rem; 
+  }
+  h2{
+      font-size: 2em;
+  }
+  h3{
+      font-size: 1.5em;
+  }
+  h4{
+      font-size: 1.2em;
+  }
+  p{
+    font-size: 1em;
+    }
+
+.background {
+  margin: -3rem 2rem;
+  padding: 2rem 1rem 1rem 2rem;
+  position: relative;
+}
+
+.main-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.text_header {
+  top: 30%;
+  position: absolute;
+  padding-left: 2rem;
+}
+.headerbild {
+  margin-top: 21%;
+}
+.impressum{
+  margin-top: 40%;
+    }
+
+/* Ausflüge Bilder*/
+.img-shadow {
+  transform: translate(0, -3%);
+  margin: 1rem 0;
+}
+.img_shadow_spiegel {
+  transform: translate(0, -11%);
+  margin: 1rem 0;
+}
+
+}
+
+ @media (max-width:576px ) {
+  
+  h1{
+    font-size: 2.5rem; 
+  }
+  h2{
+      font-size: 1.75em;
+  }
+  h3{
+      font-size: 1.5em;
+  }
+  h4{
+      font-size: 1.2em;
+  }
+
+  .headerbild img {
+    margin-top: 8%;
+  }
+ 
+  .teaser-text{
+    padding-right:10%;
+  }
+  
+  .image_opacity {
+    height: auto; 
+    width: 100%;
+  }
+  
+.impressum_grafik {
+  right: 2rem;
+  top: 30%;
+  width: 40%;}
+
+}

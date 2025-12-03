@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html" charset=utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+    <meta name="robots" content="index,follow">
+
+<!------- Seitenidentität --------->
+    <title>Anmeldung</title>
+    <link rel="icon" href="../images/logo_fenster.svg" sizes="16x16">
+
+<!------------ BOOTSTRAP Css ------------>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!------------ MAIN Css ------------>   
+<link rel="stylesheet" href="../css/style.css">
+
+<!------------ CUSTOM Css ------------>   
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/preistabelle.css">
+    
+<!------------ Fonts Css ------------>
+    <link rel="stylesheet" href="../css/font.css">
+
+<!------------ Colors Css ------------>
+<link rel="stylesheet" href="../css/accessibility_color.css">
+
+</head>
+
+<body cz-shortcut-listen="true" >
+<!------------------------------- HEADER ------------------------------->
+<div class="header-holder fixed-top navbar">
+  <header class="header"> <!--container-fluid-->
+      <!--logo-->
+      <a href="../index.html" class="navbar-brand"> 
+          <img src="../images/Logo_Kloster.svg" class="navbar-brand-unscrolled" alt="Logo Seminarhaus Kloster Schwarzenfels" title="Logo Seminarhaus Kloster Schwarzenfels">
+          <img src="../images/logo_kloster_scroll.svg" class="navbar-brand-scrolled" title="Logo Seminarhaus Kloster Schwarzenfels"> 
+      </a>
+
+      <!--burger menu-->
+      <div  class="device-menu position-absolute"> 
+          <a href="#" class="device-menu__inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a> 
+      </div>  
+    
+     <!--navigations punkten-->
+    <nav class="header-nav">
+        
+        <img class="bg_img_nav" src="../images/nav_bg_left.svg" alt="Kirchenfenster" title="Kirchenfenster">
+        <img class="bg_img_nav_right" src="../images/nav_bg_right.svg" alt="Kirchenfenster" title="Kirchenfenster">
+     
+      <div class="header-nav__inner">
+        <ul class="header-menu-list navbar navbar-nav">
+          <li class="header-menu-item"> <a href="../index.html">Start</a> </li>
+          <li class="header-menu-item"> <a href="angebote.html">Angebote</a> </li>
+          <li class="header-menu-item"> <a href="anmeldung.html">Anmeldung</a> </li>
+          <li class="header-menu-item"> <a href="preisuebersicht.html">Preisübersicht</a> </li>
+          <li class="header-menu-item"> <a href="stimmen.html">Stimmen</a> </li>
+          <li class="header-menu-item"> <a href="ausfluege.html">Ausflüge</a> </li>
+          <li class="header-menu-item"> <a href="impressum.html">Kontakt/Impressum</a> </li>
+          <li class="header-menu-item"> <a href="#">Datenschutz</a> </li>
+        </ul>
+        </div>
+    </nav>
+
+  </header>
+</div>
+
+<!------------------------------- Barrierfrei Buttons------------------------------->
+<div class="barrierfrei_buttons">
+  <button class="btn plus"> <img src="../images/plus.svg" alt="Schrift groeße" title="Schrift groeße"> </button>
+  <button class="btn minus"> <img src="../images/minus.svg" alt="Schrift kleine" title="Schrift kleine"> </button>
+  <button class="color accessibility_link"> <img src="../images/color.svg" alt="Schwarz/Weiß Modus" title="Schwarz/Weiß Modus" id="imgClickAndChange" onclick="changeImage()" > </button>
+</div>
+
+<!------------------------------- HEADER BILD ------------------------------->
+<div class="page-header-content headerbild"> 
+    <img src="../images/anmeldung_header.jpg" class="img-fluid img_header_opacity opacity-75">
+    <img src="../images/anmeldung_header.jpg" class="img-fluid img_header filter" alt="Freundliche Frau" title="Freundliche Frau">
+    <div class=" text_header" >
+        <h1 class="white d-md-block mb-2" > Anmedlung </h1>
+        <h3 class="white">Kontaktieren Sie uns!</h3>
+    </div>
+</div>
+
+<!------------------------------- ANMELDUNG ------------------------------->   
+<div class="bg_image"> 
+    <div class="main-container " >
+        <h2 class="headline pb- pt-5"> Anmeldung </h2>
+          
+        <form class="row g-3 ">
+          <!-- Vorname -->
+          <div class="col-12 col-md-6 pe-md-3">  
+            <label for="firstname" class="form-label">Vorname*</label>
+            <input type="text" class="form-control form_design" placeholder="Bernd" required>
+          </div>
+          <!-- Nachname -->       
+          <div class="col-12 col-md-6 ps-md-3 ">  
+              <label for="lastname" class="form-label">Nachname*</label>
+              <input type="text" class="form-control form_design" placeholder="Mustermann" required>
+            </div>
+          <!-- Straße -->
+            <div class="col-12 col-md-6 pe-md-3">  
+              <label for="vorname" class="form-label">Straße*</label>
+              <input type="text" class="form-control form_design" placeholder="Musterstraße" required>
+            </div>
+          <!-- Hausnummer -->
+            <div class="col-12 col-md-6 ps-md-3">  
+                <label for="vorname" class="form-label">Hausnr.*</label>
+                <input type="text" class="form-control form_design" placeholder="10" required>
+            </div>
+          <!-- PLZ -->
+            <div class="col-12 col-md-6 pe-md-3">  
+                  <label for="vorname" class="form-label">PLZ*</label>
+                  <input type="text" class="form-control form_design" placeholder="12345" required>
+            </div>
+          <!-- Ort -->
+            <div class="col-12 col-md-6 ps-md-3">  
+                    <label for="vorname" class="form-label">Ort*</label>
+                    <input type="text" class="form-control form_design" placeholder="z.B Dortmund" required>
+            </div>
+          <!-- Mail -->
+            <div class="col-12 col-md-6 pe-md-3">  
+                      <label for="vorname" class="form-label">E-Mail*</label>
+                      <input type="text" class="form-control form_design" placeholder="bernd@mustermann.de" required>
+            </div>
+          <!-- Telefon -->
+            <div class="col-12 col-md-6 ps-md-3">  
+                        <label for="vorname" class="form-label">Telefon*</label>
+                        <input type="text" class="form-control form_design" placeholder="01234 56 78 9" required>
+            </div>
+          <!-- AGB Check -->
+            <div class="col-12 mt-2">
+            <div class="form-check small_text">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label" for="gridCheck">
+                  Ich bin mit den AGB einverstanden.<b style="color: #8d634b;">*</b>
+              </label>
+            </div>
+            </div>
+          <!-- DSGVO Check -->
+            <div class="col-12 mt-2">
+              <div class="form-check small_text">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">
+                   Einwilligung zur Datenverarbeitung gemäß DSGVO<b style="color: #8d634b;">*</b>
+                </label>
+              </div>
+            </div>
+          <!-- Newsletter Check -->
+            <div class="col-12 mt-2">
+              <div class="form-check small_text">
+                <input class="form-check-input" type="checkbox" id="gridCheck" >
+                <label class="form-check-label" for="gridCheck">
+                  Ich melde mich zum Newsletter an.
+                </label>
+              </div>
+            </div>
+  
+            <p class="small_text m-0">  <b style="color: #8d634b;"> *</b> Pflichtfelder </p>
+          <!-- Button -->
+          <div class="col-12 mb-5">
+            <button type="submit" class="btn btn-primary mt-0">Senden</button>
+          </div>
+        </form>
+
+</div>
+
+</div>
+
+<!------------------------------- FOOTER ------------------------------->
+<!--LOGO-->
+<div class=" text-center">
+  <img src="../images/logo_footer.svg"  class="logo_footer" alt="Logo" title="Logo"> 
+</div>
+<div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+
+
+<footer class="main-container">
+
+  <div class="my-5  py-3">
+          <div class="row flex-sm-wrap-reverse" >
+
+              <!-- ADRESSE -->
+              <div class="col-xl-4 col-md-4 col-sm-12 col-12 content-hidden pe-4" >
+                  <p class="mb-sm-0 mb-lg-3 mt-sm-0 mt-5"><b>Adresse:</b></p>
+                   <p class="mb-1 small-footer">Seminarhaus Kloster Schwarzenfels <br> Abteistraße <br>88214 Ravensburg</p> 
+              </div>
+
+              <!-- KONTAKT -->
+              <div class="col-xl-4 col-md-4 col-sm-8 col-12 content-hidden">
+                      <p class="mb-sm-0 mb-lg-3 mt-sm-0 mt-5"><b>Kontakt:</b></p>
+                      <div class="d-flex kontakt">
+                          <img src="../images/phone.svg" class="pe-3" alt="Phone Icon" title="Phone Icon" > 
+                          <p class="mb-1 small-footer"> <a href="#" class="footer-links"> 0751-123450</a> <br> </p> 
+                      </div>
+                      <div class="d-flex kontakt">
+                          <img src="../images/fax.svg" class="pe-3" alt="Fax Icon" title="Fax Icon" > 
+                          <p class="mb-1 small-footer"> <a href="#" class="footer-links"> 0751-123459</a> <br> </p> 
+                      </div>
+                      <div class="d-flex kontakt">
+                          <img src="../images/mail.svg" class="pe-3" alt="E-Mail Icon" title="E-Mail Icon" > 
+                          <p class="mb-1 small-footer"> <a href="#" class="footer-links"> info&commat;auszeit-in-schwarzenfels.de </a> <br> </p> 
+                      </div>
+                      
+              </div>
+
+              <!-- NAV -->
+              <div class="col-xl-4 col-md-4 col-sm-3 col-12 content-hidden ps-4 ">
+                  <p class="mb-sm-0 mb-lg-3 mt-sm-0 mt-5"><b>Links:</b></p>
+                  <ul class="list-unstyled ">
+                    <div> 
+                      <li> <a href="../index.html" class="footer-links  "> Start            </a> </li> 
+                      <li> <a href="angebote.html" class="footer-links my-sm-3 my-md-0"> Angebote         </a> </li>
+                      <li> <a href="anmeldung.html" class="footer-links"> Anmeldung        </a> </li>
+                      <li> <a href="preisuebersicht.html" class="footer-links"> Preisübersicht   </a> </li>
+                      <li> <a href="stimmen.html" class="footer-links"> Stimmen          </a> </li> 
+                      <li> <a href="ausfluege.html" class="footer-links"> Ausflüge         </a> </li>
+                      <li> <a href="impressum.html" class="footer-links"> Kontakt/Impressum</a> </li>
+                      <li> <a href="#" class="footer-links"> Datenschutz      </a> </li>
+                    </div>
+                  </ul>
+              </div>
+
+
+
+           </div>
+   </div>
+
+</footer>
+</div>
+
+<div class="footer-end">
+  <div class="main-container d-flex f-end"> 
+<p class="p-footer float-start"> Prüflingsnummer: 3047 </p>
+<p class="p-footer float-end"> &copy; 2022 by Souher Al-Taleb</p>
+</div>
+</div>
+
+<!------------------------------- SCRIPT ------------------------------->
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../js/burgermenu.js"></script>
+<script type="text/javascript" src="../js/jquery_logo_scroll.js"></script>
+<script type="text/javascript" src="../js/menu_scroll.js"></script>
+<script type="text/javascript" src="../js/jquery_font.js"></script>
+<script type="text/javascript" src="../js/accessibility_font.js"></script>
+
+</body>
+</html>

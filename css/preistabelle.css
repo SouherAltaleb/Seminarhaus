@@ -1,0 +1,141 @@
+/************************** Preise **************************/
+
+thead{
+    background-color: var(--my-brown);
+    color: #ffffff;
+  }
+  tbody, td, th, tr {
+    border-style: none;
+    font-weight: 400;
+  }
+  
+  tr:nth-child(even) {
+    background-color: var(--my-bg);
+  }
+  
+  .table>:not(caption)>*>* {
+      padding: 1rem;
+      font-family: 'Open Sans';
+      font-size: 1em;
+      color: var(--my-body);
+  }
+  
+  tr.row {
+    --bs-gutter-x: 0;
+  }
+  .table>:not(:first-child) {
+    border-top: none;
+  }
+
+/*********************** Responsive Design ***********************/
+/*--------------------------------------------------------------*/
+@media (max-width: 768px) { 
+
+  
+  /* Preis Tabelle */ 
+  thead{
+  display: none;
+    }
+  
+    tr:first-child {
+      background-color: #F8F7F6;
+    }
+    tr:nth-child(2) {
+      background-color: white;
+    }
+    tr:nth-child(3) {
+      background-color: #F8F7F6;
+    }
+    tr:nth-child(4) {
+      background-color: white;
+    }
+    tr:nth-child(5) {
+      background-color: #F8F7F6;
+    }
+    tr:nth-child(6) {
+      background-color: white;
+    }
+    tr:nth-child(7) {
+      background-color: #F8F7F6;
+    }
+    tr:nth-child(8) {
+      background-color: white;
+    }
+    tr:nth-child(9) {
+      background-color: #F8F7F6;
+    }
+    tr:nth-child(10) {
+      background-color: white;
+    }
+    .table>:not(:first-child) {
+      border-top: none;
+  }
+    tr {
+      padding: .5em 2em 1em;
+    }
+    table,
+    tbody,
+    tr {
+      display: grid;
+    }
+    tbody th {
+      display: block;
+    }
+    
+    td {
+      display: inline-block;
+      min-width: 30%;
+      padding: .2em 2em;
+      text-align: left;
+    }
+    td:nth-child(3) {
+      text-align: left;
+    }
+  
+    .course {
+      font-weight: bold;
+  }
+  
+  .course-name::before,
+  .course-lecturer::before,
+  .course-date::before,
+  .course-price::before,
+  .course-full-board-price::before{
+      display: inline;
+      font-weight: normal;
+      margin-right: 1em;
+  }
+  
+  .course-name::before{
+      content: "Kurs: ";
+      font-family: "Palatino Bold";
+      color: #8d634b;
+      font-size: 1.5em;
+  }
+  .course-lecturer::before{
+      content: "Dozent-/in: ";
+      font-family: "Palatino Bold";
+      color: #8d634b;
+      font-size: 1.5em;
+  }
+  .course-date::before{
+      content: "Datum: ";
+      font-family: "Palatino Bold";
+      color: #8d634b;
+      font-size: 1.5em;
+  }
+  .course-price::before{
+      content: "Kursgebühr: ";
+      font-family: "Palatino Bold";
+      color: #8d634b;
+      font-size: 1.5em;
+  }
+  .course-full-board-price::before{
+      content: "Vollpension: ";
+      font-family: "Palatino Bold";
+      color: #8d634b;
+      font-size: 1.5em;
+  }
+
+  
+  }

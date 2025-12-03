@@ -1,0 +1,156 @@
+
+.color_brown{
+    color: #8D634B;
+  }
+  .content-bright .color_brown{
+    color: #4C4C4C;
+  }
+  
+  .color_darkbrown{
+    color: var(--my-darkbrown);
+  }
+  .content-bright .color_darkbrown{
+    color: #191919;
+  }
+
+/* FONT */
+  .content-bright h1{
+    color: #191919;
+  }
+  .content-bright h2{
+    color: #4C4C4C;
+  }
+  .content-bright h3{
+    color: #4C4C4C;
+  }
+  .content-bright h4{
+    color: #4C4C4C;
+  }
+  .content-bright h5{
+    color: #191919;
+  }
+
+  .content-bright .body{
+    color: #000000;
+  }
+
+  .content-bright .teaser-text{
+    color: #000000;
+  }
+ 
+  .content-bright .white{
+    color: black;
+    background-color: white;
+  } 
+
+  .content-bright th .white{
+    color: white;
+    background-color:#4C4C4C;
+  } 
+
+  .content-bright .stoerer .white{
+    color: white;
+    background-color:#4C4C4C;
+  } 
+  .content-bright thead, tr {
+
+    border-color: #4C4C4C;
+}
+
+/* HEADER */
+  .content-bright .header-nav.active { 
+    background-color: #4C4C4C;
+  }
+  .content-bright .device-menu:after{
+    color: #191919;
+  }
+  .content-bright .device-menu.open:after {
+    color: white;
+}
+/*
+  .content-bright span{
+    background-color: #191919;
+  } */
+
+  .content-bright nav ul li a:hover {
+    color: #191919;
+  }
+
+/* BUTTON */
+  .content-bright .btn-primary{
+    background-color: #4C4C4C;
+  }
+  .content-bright .btn-primary:hover{
+    background-color: #191919;
+  }
+  .content-bright .barrierfrei_buttons{ 
+    background-color: #4C4C4C;
+  }
+  .content-bright button.plus:hover{ 
+    background-color: #191919;
+  }
+  .content-bright button.minus:hover{ 
+    background-color: #191919;
+  }
+
+  .bg_color_brown{
+    background-color: #8d634b;
+  }
+  .content-bright .bg_color_brown{ 
+    background-color: #4C4C4C;
+  }
+ 
+  
+  .content-bright .card{ 
+    background-color: #E5E5E5;
+  }
+ 
+  /* FOOTER */
+  .content-bright .container-fluid{ 
+    background-color: #E5E5E5;
+  }
+  .content-bright .container-fluid{ 
+    border-top: #4C4C4C 2px solid;
+  }
+  .content-bright .footer-end{ 
+    background-color: #4C4C4C;
+  }
+ /* IMAGES */ 
+  .content-bright img{
+    filter: grayscale(100%);
+  }
+
+  .content-bright .bg_image{
+    filter: grayscale(100%);
+  }
+
+  /* PREISE */
+  .content-bright thead{ 
+    background-color: #4C4C4C;
+  }
+
+  .content-bright tr:nth-child(even){
+    background-color: #E5E5E5;
+  }
+  /* Tabelle Überschriftren in Klein-Modus */
+.content-bright .course-name::before{
+  color: #4C4C4C;
+}
+.content-bright .course-lecturer::before{
+  color: #4C4C4C;
+}
+.content-bright .course-date::before{
+  color: #4C4C4C;
+}
+.content-bright .course-price::before{
+  color: #4C4C4C;
+}
+.content-bright .course-full-board-price::before{
+  color: #4C4C4C;
+}
+ /* Angebote */
+  .content-bright .separator:after {
+
+    border-bottom: 3px solid #4C4C4C;
+
+}
